@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171712" />
+    <title>Rio 1910 — A imagem ganha vida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Início">
+        <span class="brand-mark"></span>
+        <span>memórias em movimento</span>
+      </a>
+      <a class="top-link" href="#processo">Como foi feito <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Rio de Janeiro · 1910</p>
+          <h1 id="hero-title">Quando o passado<br /><em>ganha outra dimensão.</em></h1>
+          <p class="intro">Esta fotografia tem mais de cem anos. Agora ela tem cor, profundidade e uma câmera que atravessa o céu do Rio.</p>
+        </div>
+
+        <div class="viewer" id="viewer">
+          <div class="scene" id="scene">
+            <svg class="photo original" viewBox="0 0 1200 760" role="img" aria-label="Fotografia histórica restaurada do Rio de Janeiro">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9d4c5"/><stop offset="1" stop-color="#9f9d91"/></linearGradient>
+                <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#777b72"/><stop offset=".5" stop-color="#a6a89d"/><stop offset="1" stop-color="#74786f"/></linearGradient>
+                <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a8a58e"/><stop offset="1" stop-color="#69695f"/></linearGradient>
+                <filter id="grain"><feTurbulence baseFrequency=".65" numOctaves="3" seed="8" type="fractalNoise"/><feColorMatrix values=".15 0 0 0 .48 0 .15 0 0 .46 0 0 .15 0 .40 0 0 0 .28 0"/><feBlend mode="multiply" in2="SourceGraphic"/></filter>
+                <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+              </defs>
+              <g class="sky"><rect width="1200" height="760" fill="url(#sky)"/><circle cx="930" cy="185" r="58" fill="#e9e3c9" opacity=".65"/></g>
+              <g class="hill" filter="url(#soft)"><path d="M0 305 Q160 220 318 298 T620 278 T930 300 T1200 240V500H0Z" fill="#777c6d"/><path d="M0 340 Q170 300 330 350 T650 330 T950 350 T1200 320V500H0Z" fill="#62685f"/></g>
+              <g class="buildings">
+                <rect x="0" y="398" width="120" height="210" fill="#7c7c70"/><rect x="112" y="355" width="135" height="255" fill="#858779"/>
+                <rect x="225" y="405" width="90" height="205" fill="#777969"/><rect x="965" y="350" width="140" height="260" fill="#858779"/>
+                <rect x="1088" y="392" width="112" height="218" fill="#747669"/>
+                <g fill="#55584f"><rect x="25" y="430" width="18" height="24"/><rect x="62" y="430" width="18" height="24"/><rect x="139" y="390" width="20" height="28"/><rect x="180" y="390" width="20" height="28"/><rect x="258" y="435" width="16" height="22"/><rect x="995" y="390" width="20" height="28"/><rect x="1038" y="390" width="20" height="28"/><rect x="1115" y="425" width="18" height="24"/></g>
+              </g>
+              <g class="palace">
+                <rect x="410" y="358" width="380" height="255" fill="#aaa999"/>
+                <rect x="445" y="308" width="310" height="62" fill="#bbb9a7"/>
+                <path d="M430 308h340l-45-48H475Z" fill="#c1bfad"/>
+                <rect x="520" y="260" width="160" height="48" fill="#c2c0ad"/>
+                <path d="M548 260Q600 215 652 260Z" fill="#aaa997"/>
+                <g fill="#55564f"><rect x="460" y="385" width="35" height="62"/><rect x="510" y="385" width="35" height="62"/><rect x="655" y="385" width="35" height="62"/><rect x="705" y="385" width="35" height="62"/></g>
+                <g fill="#65685d"><rect x="565" y="380" width="70" height="233"/><rect x="390" y="465" width="420" height="18"/></g>
+                <g fill="#cac8b7" opacity=".8"><rect x="450" y="328" width="300" height="7"/><circle cx="600" cy="250" r="9"/></g>
+              </g>
+              <g class="foreground">
+                <rect x="0" y="610" width="1200" height="150" fill="url(#road)"/>
+                <path d="M0 655 Q300 620 600 645 T1200 620V760H0Z" fill="#777568"/>
+                <g fill="#4d5047"><circle cx="330" cy="590" r="19"/><rect x="325" y="608" width="10" height="55"/><circle cx="870" cy="588" r="16"/><rect x="866" y="604" width="9" height="48"/></g>
+                <g fill="#55584f"><ellipse cx="180" cy="640" rx="36" ry="8"/><ellipse cx="970" cy="632" rx="42" ry="9"/></g>
+              </g>
+              <rect width="1200" height="760" fill="#77766b" opacity=".12" filter="url(#grain)"/>
+            </svg>
+            <div class="color-layer" id="colorLayer" aria-hidden="true">
+              <svg class="photo restored" viewBox="0 0 1200 760">
+                <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#79add0"/><stop offset=".7" stop-color="#b9cad0"/><stop offset="1" stop-color="#decda7"/></linearGradient><linearGradient id="road2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d7c49b"/><stop offset="1" stop-color="#756c56"/></linearGradient></defs>
+                <rect width="1200" height="760" fill="url(#sky2)"/>
+                <circle cx="930" cy="185" r="58" fill="#f6c989" opacity=".9"/>
+                <path d="M0 305 Q160 220 318 298 T620 278 T930 300 T1200 240V500H0Z" fill="#5d7562"/><path d="M0 340 Q170 300 330 350 T650 330 T950 350 T1200 320V500H0Z" fill="#3f5c4c"/>
+                <rect x="0" y="398" width="120" height="210" fill="#c8aa79"/><rect x="112" y="355" width="135" height="255" fill="#d7c9a7"/><rect x="225" y="405" width="90" height="205" fill="#b9a77e"/><rect x="965" y="350" width="140" height="260" fill="#dccca7"/><rect x="1088" y="392" width="112" height="218" fill="#bea980"/>
+                <g fill="#355265"><rect x="25" y="430" width="18" height="24"/><rect x="62" y="430" width="18" height="24"/><rect x="139" y="390" width="20" height="28"/><rect x="180" y="390" width="20" height="28"/><rect x="258" y="435" width="16" height="22"/><rect x="995" y="390" width="20" height="28"/><rect x="1038" y="390" width="20" height="28"/><rect x="1115" y="425" width="18" height="24"/></g>
+                <rect x="410" y="358" width="380" height="255" fill="#d7c7a2"/><rect x="445" y="308" width="310" height="62" fill="#e2d5b4"/><path d="M430 308h340l-45-48H475Z" fill="#eadcba"/><rect x="520" y="260" width="160" height="48" fill="#e4d5aa"/><path d="M548 260Q600 215 652 260Z" fill="#d9c89f"/>
+                <g fill="#6d7f85"><rect x="460" y="385" width="35" height="62"/><rect x="510" y="385" width="35" height="62"/><rect x="655" y="385" width="35" height="62"/><rect x="705" y="385" width="35" height="62"/></g><g fill="#7e806d"><rect x="565" y="380" width="70" height="233"/><rect x="390" y="465" width="420" height="18"/></g>
+                <rect x="0" y="610" width="1200" height="150" fill="url(#road2)"/><path d="M0 655 Q300 620 600 645 T1200 620V760H0Z" fill="#9a8665"/>
+                <g fill="#263e36"><circle cx="330" cy="590" r="19"/><rect x="325" y="608" width="10" height="55"/><circle cx="870" cy="588" r="16"/><rect x="866" y="604" width="9" height="48"/></g>
+              </svg>
+            </div>
+            <div class="divider" id="divider"><span class="handle" aria-hidden="true">‹ &nbsp; ›</span></div>
+            <input id="compare" class="compare" type="range" min="0" max="100" value="58" aria-label="Comparar antes e depois" />
+          </div>
+          <div class="viewer-meta">
+            <span>Antes</span><span class="location">Avenida Central · Rio de Janeiro</span><span>Depois</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="story">
+        <div class="story-label">A transformação</div>
+        <p>O palácio no centro, o <strong>Monroe</strong>, foi demolido em 1976. A colina atrás dele foi arrasada em 1922. Dentro da foto, os dois voltam a ter chão.</p>
+      </section>
+
+      <section class="process" id="processo" aria-labelledby="process-title">
+        <div class="process-heading">
+          <p class="eyebrow"><span></span> A técnica</p>
+          <h2 id="process-title">Quatro passos para<br /><em>acordar uma foto antiga.</em></h2>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-number">01</span><div class="step-icon lama" aria-hidden="true"><i></i><i></i><i></i></div><h3>LaMa</h3><p>Remove manchas e imperfeições da fotografia.</p></article>
+          <article class="step"><span class="step-number">02</span><div class="step-icon dd" aria-hidden="true"><i></i><i></i><i></i></div><h3>DDColor</h3><p>Adiciona cores à imagem a partir de padrões aprendidos.</p></article>
+          <article class="step"><span class="step-number">03</span><div class="step-icon depth" aria-hidden="true"><i></i><i></i><i></i></div><h3>Depth Anything 3</h3><p>Estima a distância relativa entre os elementos da cena.</p></article>
+          <article class="step"><span class="step-number">04</span><div class="step-icon camera" aria-hidden="true"><i></i></div><h3>Câmera virtual</h3><p>Cria pequenos movimentos e um efeito de paralaxe.</p></article>
+        </div>
+      </section>
+
+      <section class="note">
+        <p>Os modelos são abertos. Nenhum deles foi treinado especificamente para esta imagem.</p>
+        <p>O DDColor inventou um pôr do sol e pintou os prédios brancos de creme. Esse retoque foi à mão.</p>
+        <p class="caveat"><strong>O resto das cores foi um palpite da IA — e a profundidade também.</strong><br />Nada disso é memória da época. É uma forma de olhar para ela.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Fiz o mesmo com outras cinco fotos do Rio, de 1885 a 1910.</p>
+      <a href="#hero-title">Que foto antiga você gostaria de ver ganhando vida? <span>↗</span></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
